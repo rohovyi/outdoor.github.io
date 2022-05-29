@@ -1,0 +1,21 @@
+nav.__nav
+    .__nav-logo 
+        .__nav-logo-img 
+            img.svg-OutdoorLogotypeHorizontalPrimary-dims(src="@img/icons/icons_logo.svg#OutdoorLogotypeHorizontalPrimary" alt="OutdoorLogotypeHorizontalPrimary")
+    .__nav-links
+        - var items = ['Shop','About us','Our team','Buyer\'s guides','Categories']
+        - var dataItems=['shop','about','team','byer','categories']
+            each item, key in items 
+                if item === 'Categories'
+                    a.__nav-item.__nav-item-active(href='#' data-link=dataItems[key])= item
+                else
+                    a.__nav-item(href='#' data-link=dataItems[key])= item
+        a.__nav-item.__btn.__btn-nav.__btn-nav-buy(href='#') Buy template
+        a.__nav-item.__btn.__btn-nav.__btn-nav-basket(href='#') Cart
+        .is-hidden 
+            a.__nav-item.__btn.__btn-nav.__btn-nav-buy(href='#') Buy template
+            a.__nav-item.__btn.__btn-nav.__btn-nav-basket(href='#') Cart
+    .__nav-collapse
+        .__nav-menu_button
+            .__nav-menu_lines
+    .__nav_overlay

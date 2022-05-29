@@ -1,0 +1,79 @@
+.svg-avatar0-dims,
+.svg-avatar1-dims {
+    max-width : 50px;
+    max-height: 50px;
+}
+
+.svg-OutdoorLogotypeHorizontalPrimary-dims {
+    max-width : 128px;
+    max-height: 39px;
+}
+
+.svg-OutdoorLogotypeHorizontalWhite-dims {
+    max-width : 160px;
+    max-height: 48px;
+}
+
+.svg-hero-dims {
+    max-width : 1440px;
+    max-height: 640px;
+}
+
+.svg-ocean-dims {
+    max-width : 1440px;
+    max-height: 600px;
+}
+
+.svg-CombinedShape-dims,
+.svg-QAIcon-dims {
+    max-width : 28px;
+    max-height: 28px;
+}
+
+.svg-DesignedIcons-dims,
+.svg-LifetimeWarrantyIcon-dims,
+.svg-PremiumMaterialsIcon-dims,
+.svg-SustainableMaterialsIcon-dims {
+    max-width : 26px;
+    max-height: 28px;
+}
+
+.svg-books-dims,
+.svg-people-dims {
+    max-width : 576px;
+    max-height: 576px;
+}
+
+.svg-pattern {
+
+    position: absolute;
+
+    &-btm-lft {
+        bottom    : 0;
+        left      : 0;
+        max-width : 555px;
+        max-height: 435px;
+    }
+
+    &-tp-rght {
+        top       : 0;
+        right     : 0;
+        max-width : 471px;
+        max-height: 424px;
+    }
+
+    &-dec {
+        max-width : $wDec;
+        max-height: $hDec;
+
+        &-t {
+            top  : calc($hDec / -2);
+            right: calc($wDec / -2);
+        }
+
+        &-b {
+            bottom: calc($hDec / -1.8);
+            left  : calc($wDec / -2);
+        }
+    }
+}

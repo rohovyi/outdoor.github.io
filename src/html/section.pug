@@ -1,0 +1,94 @@
+section.about
+    .container
+        .__box 
+            .__pic 
+                img.svg-people-dims(src="@img/icons/icons_section.svg#people" alt="people")
+                img.svg-pattern.svg-pattern-dec.svg-pattern-dec-t(src="@img/svg/Decoration-Pattern.svg#Decoration-Pattern-1-Dark" alt="Decoration-Pattern-Dark")
+                img.svg-pattern.svg-pattern-dec.svg-pattern-dec-b(src="@img/svg/Decoration-Pattern.svg#Decoration-Pattern-1-Dark" alt="Decoration-Pattern-Dark")
+            .__box-data
+                span.__title who are we?
+                h2 A bit about us.
+                p We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.
+section.categories 
+    .container
+        .__box-header
+            span.__title our promise
+            h2 Setting the bar for our products.
+            p Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        .__box-list
+            - var items = ['Sustainable sourcing', 'Lifetime warranty','All-terrain tested', 'Premium materials', 'Designed by you', 'Quality assured']
+            - var dataItems=['SustainableMaterialsIcon', 'LifetimeWarrantyIcon', 'CombinedShape', 'PremiumMaterialsIcon', 'DesignedIcons', 'QAIcon']
+            -var dataText=['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.']
+                each item, key in items 
+                    .__box-list-item 
+                        .__pic
+                            img(src="@img/icons/icons_prom.svg#"+dataItems[key] class="svg-"+dataItems[key]+"-dims" alt=dataItems[key])
+                        h3=items[key]
+                        p=dataText[key]
+    img.svg-pattern.svg-pattern-btm-lft(src='@img/svg/Bottom-Left-Pattern.svg#Bottom-Left-Pattern-Dark-Copy' alt='Bottom-Left-Pattern-Dark-Copy')
+    img.svg-pattern.svg-pattern-tp-rght(src='@img/svg/Top-Right-Pattern.svg#Top-Right-Pattern-Dark' alt='Top-Right-Pattern-Dark')
+section.team 
+    .container
+        .__box-header
+            span.__title meet the family
+            h2 What we have in store for you.
+            p Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        .__box-list 
+            - var items = ['Accessories', 'Apparel','Climbing Gear', 'Headwear', 'Hiking Gear', 'Jackets']
+            - var dataItems=['compass', 'man', 'elev', 'girl', 'shoe', 'girl2']
+            - var dataText=['Accessories you didn\'t know you needed.', 'Check out our line of non-hiking clothes.', 'Climbing gear for every occasion.', 'Our beanies are so comfy you won\'t believe it.', 'Desert or mountain? Doesn\'t matter.', 'Our jackets are perfect for every season.']
+                each item, key in items 
+                    .__box-list-item 
+                        .__data 
+                            h3=items[key]
+                            p=dataText[key]
+                            a.__view(href="#")=items[key]
+                        .__pic 
+                            img(src="@img/icons/icons_meet_family.svg#"+dataItems[key] class="svg-"+dataItems[key]+"-dims" alt=dataItems[key])
+        .__box-btn
+            a.__read-more(href="#") Show all categories
+.section
+    img.__prllx.__prllx1(src="@img/ocean.png" alt="ocean")
+section.shop
+    .container 
+        .__box-header
+            span.__title shop
+            h2 Check out our products.
+            p Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+            a.__btn.__btn-brand(href='#') Visit shop
+section.buyers
+    .container
+        .__box-header
+            span.__title buyer's guides
+            h2 Navigating our offering.
+            p Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        .__box-list 
+            .__box-list-item 
+                img.svg-bike-dims(src="@img/icons/icons_buyers.svg#bike" alt='bike')
+                p 3 climbing accessories for the climber that has everything
+                ul 
+                    li: img(src="@img/icons/icons_avatar.svg#avatar0" class="svg-avatar0-dims" alt="avatar0")
+                    li: span Alex Jenna
+                    li: span QA
+                    li: span October 18, 2021
+            .__box-list-item 
+                img.svg-elev2-dims(src="@img/icons/icons_buyers.svg#elev2" alt='elev2')
+                p Biking accessories for the beaten path
+                ul 
+                    li: img(src="@img/icons/icons_avatar.svg#avatar1" class="svg-avatar1-dims" alt="avatar1")
+                    li: span Woodie Brandon
+                    li: span Product Designer
+                    li: span October 18, 2021
+        .__box-btn
+            a.__read-more(href="#") Show all buyer's guides
+section.read
+    .container
+        .__box 
+            .__pic 
+                img.svg-people-dims(src="@img/icons/icons_section.svg#books" alt="books")
+                img.svg-pattern.svg-pattern-dec.svg-pattern-dec-t(src="@img/svg/Decoration-Pattern.svg#Decoration-Pattern-1-Dark" alt="Decoration-Pattern-Dark")
+                img.svg-pattern.svg-pattern-dec.svg-pattern-dec-b(src="@img/svg/Decoration-Pattern.svg#Decoration-Pattern-1-Dark" alt="Decoration-Pattern-Dark")
+            .__box-data
+                span.__title some light reading
+                h2 Subscribe to our magazine today.
+                p We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.

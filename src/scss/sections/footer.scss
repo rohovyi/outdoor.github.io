@@ -1,0 +1,112 @@
+footer {
+    background-color: $color-brand;
+}
+
+.__footer {
+    .container {
+        display           : -ms-grid;
+        display           : grid;
+        -ms-grid-rows     : repeat(2, 1fr) 0.75fr;
+        grid-template-rows: repeat(2, 1fr) 0.75fr;
+        color             : white;
+    }
+
+    &-logo {
+        display          : -webkit-box;
+        display          : -ms-flexbox;
+        display          : flex;
+        -webkit-box-pack : center;
+        -ms-flex-pack    : center;
+        justify-content  : center;
+        -webkit-box-align: center;
+        -ms-flex-align   : center;
+        align-items      : center;
+
+        &-img {
+            img {
+                -webkit-transform: scale(1.5);
+                -ms-transform    : scale(1.5);
+                transform        : scale(1.5);
+            }
+        }
+    }
+
+    &-box {
+        display              : -ms-grid;
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    &-item {
+        text-transform: uppercase;
+        color         : $color-title;
+
+        p {
+            text-transform: none;
+            color         : white;
+
+            a {
+                color      : white;
+                font-size  : 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &-social {
+        display          : -webkit-box;
+        display          : -ms-flexbox;
+        display          : flex;
+        -webkit-box-pack : justify;
+        -ms-flex-pack    : justify;
+        justify-content  : space-between;
+        -webkit-box-align: center;
+        -ms-flex-align   : center;
+        align-items      : center;
+
+        &-links {
+            display              : -ms-grid;
+            display              : grid;
+            -ms-grid-columns     : repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+
+            a {
+                color      : white;
+                font-size  : $rem * 2;
+                margin-left: calc($rem / 2);
+            }
+        }
+    }
+}
+
+form.form {
+    display              : -ms-grid;
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+    background           : #F9FAFB;
+    border               : 1px solid #E5E7EB;
+    -webkit-box-sizing   : border-box;
+    box-sizing           : border-box;
+    border-radius        : 8px;
+    width                : $rate;
+    height               : 53px;
+    left                 : 0%;
+    right                : 0%;
+    top                  : 0px;
+    padding              : $zero;
+
+    input {
+        background: transparent !important;
+        border    : none !important;
+        max-width : $rate;
+        height    : $rate;
+    }
+
+    button {
+        margin-left: auto;
+        color      : white;
+    }
+}

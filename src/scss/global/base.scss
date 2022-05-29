@@ -1,0 +1,76 @@
+body {
+    font-family: $ff__main;
+    font-size  : 16px;
+    color      : $color-brand;
+    line-height: 19.2px;
+    padding    : 0;
+    margin     : 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family   : $ff__main-t;
+    letter-spacing: 0em;
+}
+
+h1 {
+    font-size  : 48px;
+    line-height: 58px;
+    text-align : left;
+    color      : white;
+}
+
+h2 {
+    font-size  : 36px;
+    font-weight: 200;
+    line-height: 43px;
+    text-align : left;
+}
+
+h3 {
+    font-size  : 28px;
+    line-height: 34px;
+    text-align : center;
+}
+
+h4 {
+    font-size  : 20px;
+    line-height: 24px;
+    text-align : center;
+}
+
+a {
+
+    &:hover,
+    &:focus {
+        color: rgb(26, 151, 160) !important;
+    }
+}
+
+.__title {
+    font-family   : $ff__main;
+    font-size     : 14px;
+    color         : $color-title;
+    line-height   : 20px;
+    letter-spacing: 2px;
+    text-align    : center;
+    text-transform: uppercase;
+}
+
+.container {
+    width    : $rate;
+    max-width: 1440px;
+    margin   : $zero auto;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.__prllx {
+    width : auto;
+    height: auto;
+    left  : -50%;
+}

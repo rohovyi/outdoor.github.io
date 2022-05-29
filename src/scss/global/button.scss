@@ -1,0 +1,95 @@
+.__btn {
+    -webkit-transition: background-color .5s ease 0s;
+    -o-transition     : background-color .5s ease 0s;
+    transition        : background-color .5s ease 0s;
+    cursor            : pointer;
+    background-color  : $color-brand;
+    border-radius     : 6px;
+    font-family       : $ff__main;
+    font-size         : 16px;
+    line-height       : 22px;
+    padding           : 10px 18px 11px;
+
+    &:hover,
+    &:focus {
+        background-color: $color-link;
+    }
+
+    &-nav {
+        color: white !important;
+
+        &-basket {
+
+            &::after {
+                border-radius   : 50%;
+                background-color: white;
+                color           : $color-brand;
+                content         : '10';
+                font-size       : .75rem;
+                padding         : calc($rem / 5) calc($rem / 2.5);
+                margin-left     : calc($rem / 4);
+
+            }
+
+            &::before {
+                font-family: $ff__awesome;
+                content    : ' \f07a';
+                margin     : $zero calc($rem / 4);
+            }
+        }
+    }
+
+    &-brand {
+        background-color: $color-text;
+        font-size       : 15px;
+        line-height     : 22px;
+        text-align      : center;
+        color           : $color-brand;
+
+        &:hover,
+        &:focus {
+            color: white;
+        }
+    }
+
+    &-form {
+
+        &:hover,
+        &:focus {
+            background-color: $color-green;
+        }
+    }
+}
+
+
+
+.__view,
+.__read-more {
+    font-size        : 15px;
+    color            : $color-brand;
+    padding          : $rem $zero;
+    text-align       : center;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: end;
+    -ms-flex-align   : end;
+    align-items      : flex-end;
+
+    &::after {
+        font-family: $ff__awesome;
+        font-size  : $rem + 0.2;
+        content    : ' \f178';
+        color      : $color-brand;
+        margin-left: calc($rem / 4);
+    }
+}
+
+.__view {
+    &::before {
+        font-size   : 1rem;
+        content     : 'View';
+        color       : $color-brand;
+        margin-right: .25rem;
+    }
+}

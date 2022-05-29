@@ -1,0 +1,30 @@
+footer.__footer
+    .container
+        .__footer-logo 
+            .__footer-logo-img 
+                img.svg-OutdoorLogotypeHorizontalWhite-dims(src="@img/icons/icons_logo.svg#OutdoorLogotypeHorizontalWhite" alt="OutdoorLogotypeHorizontalWhite")
+        .__footer-box
+            .__footer-item Pages
+                - var items = ['Home','Shop','Categories','Buyer\'s guides','404','Password']
+                    each item, key in items 
+                        p: a(href="#")= item
+            .__footer-item Gear categories
+                - var items = ['Hiking Gear','Climbing Gear','Jackets','Accessories','Apparel','Headwear']
+                    each item, key in items 
+                        p: a(href="#")= item
+            .__footer-item Company
+                - var items = ['About us','Our team','Contact','Terms & Conditions','Style guide','Licenses']
+                    each item, key in items 
+                        p: a(href="#")= item
+            .__footer-item Newsletter
+                p Subscribe to our (infrequent) newsletter where we share news about upcoming listings and projects.
+                form(method='post' novalidate).form 
+                    input.input.form__input.form__input-email(type='email' placeholder='Email' name='email')
+                    button.__btn.__btn-form(type='submit') Submit 
+        .__footer-social 
+                span © Outdoor Exploration, LLC. All rights reserved. Powered by Webflow
+                .__footer-social-links
+                    - var items = ['linkedin','facebook','instagram','twitter']
+                    - var dataItems = ['','-square','','']
+                        each item, key in items 
+                            a(href="https://"+items[key]+".com"): i(class="fa-brands fa-"+items[key]+dataItems[key] aria-hidden="true")
